@@ -1,9 +1,19 @@
 // TODO
 var GroceryList = () => (
-  <ul>
-    <li>Tacos</li>
-    <li>Bacon</li>
-  </ul>
+  <div>
+    <ul>
+      <Tacos />
+      <Bacon />
+    </ul>
+  </div>
+);
+
+var Tacos = () => (
+  <li>Tacos</li>
+);
+
+var Bacon = () => (
+  <li>Bacon</li>
 );
 
 ReactDOM.render(<GroceryList />, document.getElementById('app'));
